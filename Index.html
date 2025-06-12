@@ -8,18 +8,16 @@
         /* Estilos básicos para a página */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f8ff; /* Um azul bem claro */
+            background-color: #fcefee; /* Um fundo rosa claro, mude se quiser */
             color: #5d4037;
             text-align: center;
             margin: 0;
             padding: 20px;
-            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAhElEQVQ4T2NkYGBg+M/AI0MAwAhwJkAhMIEJwNkCmMgQcAY9AAuCCRBAUgkQVaAEA+CbkBEF0EgIAiUQUoCcQFYlQOoAwJwg+gOsALKASkQNgZgHwFI6DwgXgKkQWgPgCkQogPgTkQKwHwJxIFwGwC4gXgPgTgQAA+G8eYlVJQgAAAAASUVORK5CYII='); /* Padrão sutil de borboletas */
-            background-repeat: repeat;
         }
-        /* Estilos para o carrossel (agora no topo) */
+        /* Estilos para o carrossel */
         .carrossel {
             max-width: 600px;
-            margin: 20px auto; /* Espaço abaixo do carrossel */
+            margin: 30px auto;
             overflow: hidden;
             border-radius: 15px;
             border: 5px solid white;
@@ -36,14 +34,14 @@
         /* Estilos para o texto e música */
         .conteudo {
             max-width: 700px;
-            margin: 30px auto;
+            margin: 20px auto;
             background-color: white;
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
         h1 {
-            color: #e91e63; /* Um rosa mais vibrante */
+            color: #d81b60; /* Cor do título */
         }
         p {
             font-size: 1.1em;
@@ -55,14 +53,12 @@
             margin-top: 20px;
         }
 
-        /* --- ESTILOS PARA O CONTADOR (CLEAN) - AGORA NO FINAL --- */
+        /* --- ESTILOS PARA O CONTADOR (CLEAN) --- */
         #contador-container {
             max-width: 700px;
-            margin: 30px auto; /* Mais espaço acima */
+            margin: 15px auto;
             padding: 10px;
             text-align: center;
-            background-color: rgba(255, 255, 255, 0.7); /* Fundo branco semi-transparente para o contador */
-            border-radius: 10px;
         }
         #contador-container h2 {
             margin: 0 0 10px 0;
@@ -73,7 +69,6 @@
         #contador {
             display: flex;
             justify-content: center;
-            flex-wrap: wrap; /* Permite que os itens quebrem para a linha de baixo em telas pequenas */
             gap: 10px;
         }
         .tempo-bloco {
@@ -84,7 +79,7 @@
             font-size: 1.4em;
             font-weight: bold;
             display: block;
-            color: #e91e63; /* Cor vibrante para os números */
+            color: #5d4037;
         }
         .tempo-texto {
             font-size: 0.7em;
@@ -98,18 +93,14 @@
 </head>
 <body>
 
-    <div class="carrossel" id="meuCarrossel">
-        <div class="carrossel-inner">
-            <img src="fotos/1.jpg" alt="Foto de nós 1">
-            <img src="fotos/2.jpg" alt="Foto de nós 2">
-            <img src="fotos/3.jpg" alt="Foto de nós 3">
-            <img src="fotos/4.jpg" alt="Foto de nós 4">
+    <div id="contador-container">
+        <h2>Estamos juntos há:</h2>
+        <div id="contador">
             </div>
     </div>
-
     <div class="conteudo">
         <h1>Para o amor da minha vida</h1>
-
+        
         <p>
             Meu amor, cada momento ao seu lado é um presente. Preparei esta pequena surpresa para te lembrar do quanto você é especial para mim. Cada foto representa um pedaço da nossa história. Dê play na nossa música e sorria. Eu te amo!
         </p>
@@ -120,9 +111,16 @@
         </audio>
     </div>
 
-    <div id="contador-container">
-        <h2>Estamos juntos há:</h2>
-        <div id="contador">
+    <div class="carrossel" id="meuCarrossel">
+        <div class="carrossel-inner">
+            <img src="fotos/1.jpg" alt="Foto de nós 1">
+            <img src="fotos/2.jpg" alt="Foto de nós 2">
+            <img src="fotos/3.jpg" alt="Foto de nós 3">
+            <img src="fotos/4.jpg" alt="Foto de nós 4">
+            <img src="fotos/5.jpg" alt="Foto de nós 5">
+            <img src="fotos/6.jpg" alt="Foto de nós 6">
+            <img src="fotos/7.jpg" alt="Foto de nós 7">
+            <img src="fotos/8.jpg" alt="Foto de nós 8">
             </div>
     </div>
 
